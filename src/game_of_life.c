@@ -181,7 +181,7 @@ int update_field(int **field, int **temp_field) {
 
             neighbours == COL_TO_BORN ? temp_field[i][j] = 1 : 0;  // рождение
             (neighbours < COL_TO_LIFE_MIN || neighbours > COL_TO_LIFE_MAX)
-                                        ? temp_field[i][j] = 0 : 1;  // смерть
+            ? temp_field[i][j] = 0 : 1;  // смерть
         }
     }
 
