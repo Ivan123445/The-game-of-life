@@ -103,7 +103,7 @@ void render(int **field, int speed) {
         printw(WALL_SYMB);
         for (int j = 0; j < WIDE_FIELD; ++j) {
             if (field[i][j] == 1) {
-                printw("%1.1c", point);
+                printw("%1c", point);
                 continue;
             }
             printw(SPASE_SYMB);
@@ -118,7 +118,7 @@ void render(int **field, int speed) {
 void render_floor() {
     int floor = FLOOR_SYMB;
     printw("\n");
-    for (int i = 0; i < WIDE_FIELD; ++i) { printw("%1.1c", floor); }
+    for (int i = 0; i < WIDE_FIELD; ++i) { printw("%1c", floor); }
     printw("\n");
 }
 
